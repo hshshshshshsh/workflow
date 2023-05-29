@@ -1,0 +1,46 @@
+name: Environment Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dev:
+    name: Dev Environment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo Dev
+        run: echo "Running in DEV environment"
+
+      # Add your Dev environment steps here
+
+  sit:
+    name: SIT Environment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo SIT
+        run: echo "Running in SIT environment"
+
+      # Add your SIT environment steps here
+
+  uat:
+    name: UAT Environment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo UAT
+        run: echo "Running in UAT environment"
+
+      # Add your UAT environment steps here
