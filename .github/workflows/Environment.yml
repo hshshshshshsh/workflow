@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  dev:
+  gtrt:
     name: Dev Environment
     runs-on: ubuntu-latest
 
